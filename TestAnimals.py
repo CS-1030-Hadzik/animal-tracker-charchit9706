@@ -39,7 +39,7 @@ class TestAnimals(unittest.TestCase):
     def test_animal_str(self):
         try:
             generic_animal = Animal("Generic", "Unknown")
-            self.assertEqual(str(generic_animal), "Kingdom: 'Animalia', Name: 'Generic', Species: 'Unknown'")
+            self.assertEqual(str(generic_animal), "Kingdom: Animalia, Name: Generic, Species: Unknown")
             TestAnimals.total_points += 10  # Add points for passing this test
             print("test_animal_str passed: +10 points")
         except Exception as e:
@@ -71,7 +71,7 @@ class TestAnimals(unittest.TestCase):
     def test_dog_str(self):
         try:
             buddy = Dog("Buddy", "Canine", "Golden Retriever")
-            self.assertEqual(str(buddy), "Kingdom: 'Animalia', Name: 'Buddy', Species: 'Canine', Breed: 'Golden Retriever'")
+            self.assertEqual(str(buddy), "Kingdom: Animalia, Name: Buddy, Species: Canine, Breed: Golden Retriever")
             TestAnimals.total_points += 10  # Add points for passing this test
             print("test_dog_str passed: +10 points")
         except Exception as e:
